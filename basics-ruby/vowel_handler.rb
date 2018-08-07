@@ -1,6 +1,6 @@
 class VowelHandler
   def replace_vowel(name)
-    if(!name or name.length<1)
+    if !name or name.length < 1
       puts("Please provide an input")
     else
       name = name.gsub(/[aeiouAEIOU]/,'*')
