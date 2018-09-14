@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <style type="text/css">
+      .contact-form label{
+        display:inline-block;
+        width:100px;
+        margin-bottom: 5px;
+      }
+      fieldset{
+        border:none;
+        width:300px;
+        padding-left: 0px;
+      }
+      .title-text{
+        font: bold;
+      }
+      body{
+        background-color: #F1F0F1;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>HTML form exercise</h2>
+    <span style="color:red">Please note:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    <br>
+    <form>
+    <fieldset class='contact-form'>
+      <legend><b>Contact form</b></legend>
+      <label for="contactname"> Your name*:</label> <input type="text" name="contactname">
+      <label for="email">E-mail*: </label> <input type="email" name="email">
+      <label for="phonenumber">Phone number:</label> <input type="tel" name="phonenumber">
+      <label for="website">Website*:</label> <input type="url" name="website" placeholder="http://" size="22">
+    </fieldset>
+    <label>Comments*:</label> <br> <textarea rows="7" cols="30"></textarea><br><br>
+    <b>Text field</b><br>
+    <label>Your name:</label> <input type="text" name="name"><br><br>
+    <b>Password field</b><br>
+    <label>Password:</label> <input type="password" name="password"><br><br>
+    <b>Radio buttons</b><br>
+    <label>Do you like pizza?</label><br>
+    <input type="radio" name="pizza" value="Yes" checked="checked">Yes<br>
+    <input type="radio" name="pizza" value="No">No<br>
+    <input type="radio" name="pizza" value="Maybe">Maybe<br>
+    <input type="radio" name="Never tried">Never tried<br><br>
+    <b>Check box</b><br>
+    <input type="checkbox" name="service-liked" value="yes">Check this box if you like our service<br><br>
+    <b>Text area</b><br>
+    Anything you would like to say?<br>
+    <textarea rows="5" cols="30"></textarea><br><br>
+    <b>I Like</b><br><br>
+    <select name="food" size="5" multiple>
+      <option value="mushrooms">mushrooms</option>
+      <option value="green peppers">green peppers</option>
+      <option value="onions">onions</option>
+      <option value="tomatoes">tomatoes</option>
+      <option value="olives">olives</option>
+    </select><br><br>
+    <b>Menu</b><br>
+    Your favorite color:<br>
+    <select name="color">
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+    </select><br><br>
+    <b>Attach file</b><br>
+    <input type="file" name="file"/><br><br>
+    <b>Buttons</b><br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
